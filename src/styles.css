@@ -2,3 +2,42 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-gap: 0.1em;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #eaeaea;
+  padding: 1em;
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+.grid > * {
+  display: flex;
+  align-items: top;
+  justify-content: left;
+}
+
+.grid > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
