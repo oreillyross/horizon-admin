@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import SourceManagement from "./SourceManagement";
 import "./styles.css";
+import Footer from "./Footer";
+import { Icon } from "semantic-ui-react";
 
 class App extends Component {
   render() {
@@ -8,7 +10,10 @@ class App extends Component {
       <div className="grid">
         <header>Horizon Management Dashboard</header>
 
-        <aside className="sidebar-left">Left Sidebar</aside>
+        <aside className="sidebar-left">
+          Left Sidebar
+          <Icon name="add" />
+        </aside>
 
         <article>
           <SourceManagement />
@@ -16,7 +21,9 @@ class App extends Component {
 
         <aside className="sidebar-right">Right Sidebar</aside>
 
-        <footer>Footer</footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
