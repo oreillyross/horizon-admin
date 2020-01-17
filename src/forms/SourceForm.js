@@ -38,10 +38,11 @@ export default function SourceForm({ handleClose }) {
           name="sourceName"
           type="text"
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           value={formik.values.sourceName}
           placeholder="Source Name"
         />
-        {formik.errors.sourceName ? (
+        {formik.touched.sourceName && formik.errors.sourceName ? (
           <div>{formik.errors.sourceName}</div>
         ) : null}
       </Form.Field>
@@ -52,10 +53,13 @@ export default function SourceForm({ handleClose }) {
           name="sourceUrl"
           type="text"
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           value={formik.values.sourceUrl}
           placeholder="Source Url"
         />
-        {formik.errors.sourceUrl ? <div>{formik.errors.sourceUrl}</div> : null}
+        {formik.touched.sourceUrl && formik.errors.sourceUrl ? (
+          <div>{formik.errors.sourceUrl}</div>
+        ) : null}
       </Form.Field>
       <Button color="linkedin" type="submit">
         Submit

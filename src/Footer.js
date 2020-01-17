@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SourceForm from "./forms/SourceForm";
 
 const StyledFooter = styled.div`
-  color: red;
+  display: flex;
 `;
 
 export default function Footer() {

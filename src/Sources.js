@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Header, Rating, Checkbox } from "semantic-ui-react";
+import { Table, Header, Checkbox } from "semantic-ui-react";
 
 export default function Sources() {
   return (
