@@ -1,13 +1,13 @@
 import React from "react";
 import { useFormik } from "formik";
-import { Form, Label, Button } from "semantic-ui-react";
+import { Form, Button } from "semantic-ui-react";
 
 const validate = values => {
   const errors = {};
   if (values.sourceName === "") {
     errors.sourceName = "Source Name cannot be empty";
   }
-  const expression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+  const expression = /[-a-zA-Z0-9@:%._~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_.~#?&//=]*)?/gi;
   const regex = new RegExp(expression);
   if (!values.sourceUrl.match(regex)) {
     errors.sourceUrl = "The url is not valid";

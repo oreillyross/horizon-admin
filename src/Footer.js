@@ -18,8 +18,8 @@ export default function Footer() {
       <Modal
         open={modalOpen}
         trigger={
-          <Button icon onClick={() => setOpen(true)}>
-            <Icon name="add" /> New Source
+          <Button color="linkedin" icon onClick={() => setOpen(true)}>
+            <Icon name="add" /> Add Source
           </Button>
         }
       >
@@ -28,7 +28,6 @@ export default function Footer() {
           <SourceForm handleClose={handleClose} />
         </Modal.Content>
       </Modal>
-      <SourceForm />
     </StyledFooter>
   );
 }
