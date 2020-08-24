@@ -3,6 +3,7 @@ import SourceManagement from "./SourceManagement";
 import "./styles.css";
 import Footer from "./Footer";
 import { Icon } from "semantic-ui-react";
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 
 class App extends Component {
   render() {

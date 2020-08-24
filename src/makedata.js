@@ -11,7 +11,7 @@ const range = len => {
 const newPerson = () => {
   const statusChance = Math.random();
   return {
-    firstName: namor.generate({ words: 1, numbers: 0 }),
+    sourceName: namor.generate({ words: 1, numbers: 0 }),
     lastName: namor.generate({ words: 1, numbers: 0 }),
     age: Math.floor(Math.random() * 30),
     visits: Math.floor(Math.random() * 100),
